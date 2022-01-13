@@ -12,6 +12,7 @@ defmodule ChessCore do
       :world
 
   """
+  @spec hello() :: Atom.t()
   def hello do
     :world
   end
