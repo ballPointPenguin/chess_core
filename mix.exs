@@ -23,6 +23,7 @@ defmodule ChessCore.MixProject do
     [
       {:binbo, "~> 3.0"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:ratatouille, "~> 0.5.1"},
       {:sobelow, "~> 0.8", only: :dev}
     ]
   end

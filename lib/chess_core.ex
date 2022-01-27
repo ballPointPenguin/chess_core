@@ -33,7 +33,7 @@ defmodule ChessCore do
       }
   """
 
-  @spec parse_fen(String.t()) :: __MODULE__.t()
+  @spec parse_fen(String.t()) :: %__MODULE__{}
   def parse_fen(fen) do
     [board, active_color, castling, en_passant, halfmove, move] = String.split(fen)
 
