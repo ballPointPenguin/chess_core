@@ -4,6 +4,14 @@ defmodule ChessCore.Utilities do
   """
 
   @doc """
+  Basic function that takes no arguments and returns the initial FEN of a
+  standard game of chess.
+  """
+
+  @spec initial_fen :: String.t()
+  def initial_fen, do: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+
+  @doc """
   Basic function that takes no arguments and returns a map of which squares
   are light and dark on a standard chess board.
   """

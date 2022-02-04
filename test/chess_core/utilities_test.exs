@@ -6,8 +6,13 @@ defmodule ChessCore.UtilitiesTest do
   use ExUnit.Case
   doctest ChessCore.Utilities
 
+  test "provides initial FEN string" do
+    assert ChessCore.Utilities.initial_fen() ==
+             "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  end
+
   test "provides a map of board colors" do
-    assert ChessCore.color_map() ==
+    assert ChessCore.Utilities.color_map() ==
              %{
                {:a, 1} => :dark,
                {:a, 2} => :light,
