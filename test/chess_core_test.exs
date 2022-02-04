@@ -1,8 +1,8 @@
 defmodule ChessCoreTest do
+  @moduledoc """
+  Tests for ChessCore
+  """
+
   use ExUnit.Case
   doctest ChessCore
-
-  test "greets the world" do
-    assert ChessCore.hello() == :world
-  end
 end
