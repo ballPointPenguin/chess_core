@@ -1,4 +1,7 @@
+# credo:disable-for-this-file Credo.Check.Readability.Specs
+# credo:disable-for-this-file Credo.Check.Warning.MixEnv
 defmodule ChessCore.MixProject do
+  @moduledoc false
   use Mix.Project
 
   def project do
@@ -21,7 +24,7 @@ defmodule ChessCore.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:binbo, "~> 3.0"},
+      {:binbo, "~> 4.0"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:ratatouille, "~> 0.5.1"},
       {:sobelow, "~> 0.8", only: :dev}
